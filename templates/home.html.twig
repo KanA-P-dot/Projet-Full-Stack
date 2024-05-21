@@ -6,7 +6,7 @@
 <div class="accueil">
     <div class="header">
         <img src="{{ asset('/img/sodipharm.png') }}" alt="Sodipharm logo" class="logo">
-        <button class="add-button" >+</button>
+         <a href="{{ path('descente') }}"><button class="add-button">+</button></a>
     </div>
     <div class="descente-container">
         {% for i in 1..8 %}
@@ -16,7 +16,6 @@
                     <span class="view-icon">👁️</span>
                     <span class="edit-icon">✏️</span>
                     <span class="delete-icon">🗑️</span>
-                    
                 </div>
             </div>
         {% endfor %}
