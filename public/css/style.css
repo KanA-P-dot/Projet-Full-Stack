@@ -38,7 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #283593;
+    background: linear-gradient(to right, #e0e0e0, #283593 25%);
     color: white;
     padding: 1em;
 }
@@ -48,9 +48,11 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #283593;
+    background: linear-gradient(to right, #e0e0e0, #283593 25%);
     color: white;
     padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
 }
 
 .logo {
@@ -83,7 +85,7 @@ header {
     background-color: #283593;
     color: white;
     padding: 1em;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
