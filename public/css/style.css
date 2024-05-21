@@ -81,8 +81,7 @@ header {
 }
 
 .descente {
-    background-color: #283593;
-    color: white;
+    color: black;
     padding: 1em;
     border-radius: 10px;
     text-align: center;
@@ -103,4 +102,36 @@ header {
 
 .view-icon, .edit-icon, .delete-icon {
     cursor: pointer;
+}
+
+form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-inputs label, .form-inputs input, .form-inputs button {
+    margin-bottom: 1em;
+}
+
+#rectangle-preview {
+    width: 100px;
+    height: 100px;
+    background-color: #3f51b5;
+    border: 2px solid #283593;
+    transition: width 0.3s, height 0.3s;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
