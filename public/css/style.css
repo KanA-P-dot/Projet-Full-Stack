@@ -47,7 +47,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     background: linear-gradient(to right, #e0e0e0, #283593 25%);
     color: white;
     padding: 1em;
