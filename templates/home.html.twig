@@ -4,12 +4,19 @@
 
 {% block body %}
 <div class="accueil">
-    <h1>Accueil</h1>
+    <div class="header">
+        <img src="{{ asset('../public/img/sodipharm.png') }}" alt="Sodipharm logo" class="logo">
+        <button class="add-button">+</button>
+    </div>
     <div class="descente-container">
         {% for i in 1..8 %}
             <div class="descente">
-                <p>Descente {{ i }}</p>
-                <p></p>
+                <p>Descente name</p>
+                <div class="icons">
+                    <span class="view-icon">👁️</span>
+                    <span class="edit-icon">✏️</span>
+                    <span class="delete-icon">🗑️</span>
+                </div>
             </div>
         {% endfor %}
     </div>
