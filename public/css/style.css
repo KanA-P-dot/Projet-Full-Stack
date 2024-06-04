@@ -125,7 +125,6 @@ header {
 #rectangle-preview {
     position: relative;
     background-color: #ccc;
-    margin-top: 20px;
     width: 200px; /* Ajustez la largeur du rectangle selon vos besoins */
     height: 100px; /* Ajustez la hauteur du rectangle selon vos besoins */
 }
@@ -157,4 +156,8 @@ label i {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+#etagere-container {
+    position: absolute;
 }

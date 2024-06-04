@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
             rectanglePreview.style.height = `${hauteur}px`;
             rectanglePreview.style.width = `${largeur}px`;
 
-            hauteurLabel.textContent = `${hauteur}cm`;
-            largeurLabel.textContent = `${largeur}cm`;
+            hauteurLabel.textContent = `<- ${hauteur}cm ->`;
+            largeurLabel.textContent = `<- ${largeur}cm ->`;
 
             // Construction de l'URL avec les paramètres hauteur et largeur
             const url = `etagere?hauteur=${encodeURIComponent(hauteur)}&largeur=${encodeURIComponent(largeur)}`;
