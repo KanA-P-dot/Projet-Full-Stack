@@ -3,24 +3,26 @@
 {% block title %}Descente{% endblock %}
 
 {% block body %}
-<div class="descente">
+<div class="accueil">
     <div class="header">
-        <img src="{{ asset('/img/sodipharm.png') }}" alt="Sodipharm logo" class="logo">
-         <a href="{{ path('descente') }}"><button class="add-button">+</button></a>
+        <a href="{{ path('home') }}"><img src="{{ asset('/img/sodipharm.png') }}" alt="Sodipharm logo" class="logo"></a>
     </div>
     <h1>Descente</h1>
     <div class="form-container">
         <div class="form-inputs">
-            <label for="hauteur">Hauteur:</label>
-            <input type="number" id="hauteur" name="hauteur" min="0">
+            <label for="hauteur">Hauteur : <i>en cm</i></label>
+            <input type="number" id="hauteur" name="hauteur" min="0" value="200">
             
-            <label for="largeur">Largeur:</label>
-            <input type="number" id="largeur" name="largeur" min="0">
+            <label for="largeur">Largeur : <i>en cm</i></label>
+            <input type="number" id="largeur" name="largeur" min="0" value="100">
             
-            <button type="button" id="preview-button">Suivant</button>
+            <button type="button" id="next-button">Suivant</button>
         </div>
         <div class="preview">
-            <div id="rectangle-preview"></div>
+            <div id="rectangle-preview">
+                <div id="hauteur-label" class="dimension-label"></div>
+                <div id="largeur-label" class="dimension-label"></div>
+            </div>
         </div>
     </div>
 </div>

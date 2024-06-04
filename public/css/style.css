@@ -38,7 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #e0e0e0, #283593 25%);
+    background: linear-gradient(to right, #979797, #283593 25%);
     color: white;
     padding: 1em;
 }
@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #e0e0e0, #283593 25%);
+    background: linear-gradient(to right, #979797, #283593 25%);
     color: white;
     padding: 1em;
     margin-bottom: 1em;
@@ -84,6 +84,7 @@ header {
     color: black;
     padding: 1em;
     border-radius: 10px;
+    background-color: #283593;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -104,9 +105,9 @@ header {
     cursor: pointer;
 }
 
-form-container {
+.form-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2em;
 }
@@ -122,11 +123,33 @@ form-container {
 }
 
 #rectangle-preview {
-    width: 100px;
-    height: 100px;
-    background-color: #3f51b5;
-    border: 2px solid #283593;
-    transition: width 0.3s, height 0.3s;
+    position: relative;
+    background-color: #ccc;
+    margin-top: 20px;
+    width: 200px; /* Ajustez la largeur du rectangle selon vos besoins */
+    height: 100px; /* Ajustez la hauteur du rectangle selon vos besoins */
+}
+
+.dimension-label {
+    position: absolute;
+    color: #000;
+    font-size: 14px;
+}
+
+#largeur-label {
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hauteur-label {
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+}
+
+label i {
+    font-size: 10px;
 }
 
 .preview {
